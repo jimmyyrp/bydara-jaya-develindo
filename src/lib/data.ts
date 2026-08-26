@@ -41,10 +41,6 @@ export const mainNavigation = [
         href: "/proyek/griya-taman-belibis/tipe-rumah",
       },
       {
-        name: "Galeri",
-        href: "/proyek/griya-taman-belibis/galeri",
-      },
-      {
         name: "Fasilitas",
         href: "/proyek/griya-taman-belibis/fasilitas",
       },

@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Home,
-  ImageIcon,
   Church,
   MapPin,
   ArrowRight,
@@ -27,12 +26,6 @@ const subPages = [
     description: "Lihat spesifikasi lengkap dan harga setiap tipe unit yang tersedia.",
     href: "/proyek/griya-taman-belibis/tipe-rumah",
     icon: Home,
-  },
-  {
-    title: "Galeri",
-    description: "Foto progres pembangunan, showroom, dan lingkungan sekitar.",
-    href: "/proyek/griya-taman-belibis/galeri",
-    icon: ImageIcon,
   },
   {
     title: "Fasilitas",
@@ -73,7 +66,7 @@ export default function GriyaTamanBelibisPage() {
       {/* Sub-pages Navigation */}
       <section className="py-10 md:py-16 bg-background">
         <div className="container-custom">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {subPages.map((page) => {
               const Icon = page.icon;
               return (

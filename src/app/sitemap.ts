@@ -31,12 +31,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/proyek/griya-taman-belibis/galeri`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
       url: `${baseUrl}/proyek/griya-taman-belibis/fasilitas`,
       lastModified: now,
       changeFrequency: "monthly",
