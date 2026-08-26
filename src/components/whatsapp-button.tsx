@@ -25,7 +25,7 @@ export function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Hubungi Sales via WhatsApp"
-      className="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-[100] bg-[#25D366] text-white px-5 py-3 md:px-6 md:py-4 rounded-full shadow-lg flex items-center gap-2 hover:scale-110 active:scale-95 transition-all duration-300 group"
+      className="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-[100] bg-whatsapp text-white px-5 py-3 md:px-6 md:py-4 rounded-full shadow-lg flex items-center gap-2 hover:bg-whatsapp-hover hover:scale-110 active:scale-95 transition-all duration-300 group"
     >
       <MessageCircle className="h-5 w-5 md:h-6 md:w-6 fill-current" />
       <span className="font-bold text-[10px] md:text-sm hidden sm:block tracking-wide uppercase">
@@ -33,7 +33,7 @@ export function WhatsAppButton() {
       </span>
 
       {/* Pulse effect — respects prefers-reduced-motion via CSS in globals.css */}
-      <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-20 -z-10" />
+      <span className="absolute inset-0 rounded-full bg-whatsapp animate-ping opacity-20 -z-10" />
     </Link>
   );
 }

@@ -143,7 +143,7 @@ export default function TipeRumahPage() {
   return (
     <>
       {/* Hero */}
-      <section className="py-20 md:py-28 bg-background-alt">
+      <section className="py-12 md:py-16 bg-background-alt">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <Badge className="bg-primary-muted text-primary border-none px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest">
@@ -161,7 +161,7 @@ export default function TipeRumahPage() {
       </section>
 
       {/* Unit Grid */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-10 md:py-16 bg-background">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {unitTypes.map((unit) => (

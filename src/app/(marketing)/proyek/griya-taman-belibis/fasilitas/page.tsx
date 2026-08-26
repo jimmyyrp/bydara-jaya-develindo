@@ -28,7 +28,7 @@ export default function FasilitasPage() {
   return (
     <>
       {/* Hero */}
-      <section className="py-20 md:py-28 bg-background-alt">
+      <section className="py-12 md:py-16 bg-background-alt">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <Badge className="bg-primary-muted text-primary border-none px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest">
@@ -49,7 +49,7 @@ export default function FasilitasPage() {
       </section>
 
       {/* Facilities Grid */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-10 md:py-16 bg-background">
         <div className="container-custom">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {facilities.map((item, idx) => {
@@ -76,7 +76,7 @@ export default function FasilitasPage() {
       </section>
 
       {/* Mushalla Highlight */}
-      <section className="py-16 md:py-24 bg-accent/30">
+      <section className="py-10 md:py-16 bg-accent/30">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground">

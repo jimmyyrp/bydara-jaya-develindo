@@ -1,27 +1,27 @@
 {
   "hero": {
-    "url": "https://picsum.photos/seed/bydara1/1200/800",
+    "url": "/hero.webp",
     "width": 1200,
     "height": 800,
     "alt": "Griya Taman Belibis Fasad Rumah",
     "hint": "modern house garden"
   },
   "unit_36": {
-    "url": "https://picsum.photos/seed/unit36/800/600",
+    "url": "/hero.webp",
     "width": 800,
     "height": 600,
     "alt": "Rumah Tipe 36 Subsidi",
     "hint": "house exterior"
   },
   "unit_komersil": {
-    "url": "https://picsum.photos/seed/unitkom/800/600",
+    "url": "/hero.webp",
     "width": 800,
     "height": 600,
     "alt": "Rumah Tipe Komersil",
     "hint": "luxury house"
   },
   "facility": {
-    "url": "https://picsum.photos/seed/facil/800/500",
+    "url": "/hero.webp",
     "width": 800,
     "height": 500,
     "alt": "Mushalla Taman Belibis",

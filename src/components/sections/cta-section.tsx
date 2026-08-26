@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { MessageCircle, ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/data";
 
 export function CTASection() {
@@ -27,31 +26,22 @@ export function CTASection() {
             ketersediaan unit.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3 pt-2">
-            <Button
-              size="lg"
-              className="rounded-full bg-white text-primary hover:bg-white/90 px-8 py-6 text-[10px] font-bold shadow-lg transition-all duration-300 group"
-              asChild
+            <a
+              href={`https://wa.me/${siteConfig.whatsapp}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full bg-white text-primary hover:bg-white/90 px-8 py-6 text-[10px] font-bold shadow-lg transition-all duration-300 group"
             >
-              <a
-                href={`https://wa.me/${siteConfig.whatsapp}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                CHAT WHATSAPP
-                <MessageCircle className="ml-2 h-4 w-4 group-hover:scale-110 transition-transform" />
-              </a>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="rounded-full border-white/30 text-white hover:bg-white/10 px-8 py-6 text-[10px] font-bold transition-all duration-300 group"
-              asChild
+              CHAT WHATSAPP
+              <MessageCircle className="ml-2 h-4 w-4 group-hover:scale-110 transition-transform" />
+            </a>
+            <Link
+              href="/booking"
+              className="inline-flex items-center justify-center rounded-full border-2 border-white/40 text-white hover:bg-white/10 hover:border-white/60 px-8 py-6 text-[10px] font-bold transition-all duration-300 group"
             >
-              <Link href="/booking">
-                BOOKING SEKARANG
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </Button>
+              BOOKING SEKARANG
+              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
           </div>
         </motion.div>
       </div>

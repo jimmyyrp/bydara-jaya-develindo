@@ -75,6 +75,10 @@ const config: Config = {
         info: {
           DEFAULT: 'hsl(var(--info))',
         },
+        whatsapp: {
+          DEFAULT: 'hsl(var(--whatsapp))',
+          hover: 'hsl(var(--whatsapp-hover))',
+        },
       },
       borderRadius: {
         sm: 'var(--radius-sm)',

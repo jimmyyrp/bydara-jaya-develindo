@@ -41,7 +41,7 @@ export function WebDevCTA() {
             <div className="flex flex-col sm:flex-row justify-center gap-3 pt-2">
               <Button
                 size="lg"
-                className="rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white px-8 py-6 text-[10px] font-bold shadow-lg transition-all duration-300 group"
+                className="rounded-full bg-whatsapp hover:bg-whatsapp-hover text-white px-8 py-6 text-[10px] font-bold shadow-lg transition-all duration-300 group"
                 asChild
               >
                 <a

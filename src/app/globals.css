@@ -47,6 +47,10 @@
     --destructive-bg: 4 70% 95%;
     --info: 205 60% 45%;
 
+    /* === WHATSAPP === */
+    --whatsapp: 142 71% 45%;
+    --whatsapp-hover: 142 71% 39%;
+
     /* === BORDER & DIVIDER === */
     --border: 42 15% 88%;
     --border-strong: 42 15% 78%;
@@ -65,6 +69,34 @@
     --shadow-sm: 0 1px 2px hsl(var(--shadow-color) / 0.06);
     --shadow-md: 0 4px 12px hsl(var(--shadow-color) / 0.10);
     --shadow-lg: 0 12px 32px hsl(var(--shadow-color) / 0.14);
+  }
+
+  /* === DARK MODE (ready, toggle via class on <html>) === */
+  .dark {
+    --background: 222 47% 11%;
+    --background-alt: 222 47% 14%;
+    --foreground: 42 30% 99%;
+    --foreground-muted: 42 20% 70%;
+    --foreground-subtle: 42 15% 50%;
+    --accent: 222 30% 18%;
+    --accent-foreground: 42 30% 99%;
+    --accent-hover: 222 28% 22%;
+    --primary-muted: 153 25% 18%;
+    --card: 222 47% 14%;
+    --card-foreground: 42 30% 99%;
+    --popover: 222 47% 14%;
+    --popover-foreground: 42 30% 99%;
+    --secondary: 222 30% 18%;
+    --secondary-foreground: 153 35% 60%;
+    --muted: 222 20% 18%;
+    --muted-foreground: 42 20% 60%;
+    --input: 222 15% 22%;
+    --border: 222 15% 22%;
+    --border-strong: 222 15% 30%;
+    --destructive-bg: 4 70% 15%;
+    --success-bg: 142 40% 12%;
+    --warning-bg: 38 80% 12%;
+    --shadow-color: 0 0% 0%;
   }
 }
 

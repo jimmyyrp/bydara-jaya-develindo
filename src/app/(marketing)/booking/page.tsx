@@ -168,7 +168,7 @@ export default function BookingPage() {
   return (
     <>
       {/* Hero */}
-      <section className="py-20 md:py-28 bg-background-alt">
+      <section className="py-12 md:py-16 bg-background-alt">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <Badge className="bg-primary-muted text-primary border-none px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest">
@@ -186,7 +186,7 @@ export default function BookingPage() {
       </section>
 
       {/* Form */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-10 md:py-16 bg-background">
         <div className="container-custom">
           <div className="max-w-2xl mx-auto">
             <Card className="border border-border rounded-lg bg-background-alt">
@@ -390,13 +390,10 @@ export default function BookingPage() {
                   {/* Submit */}
                   <Button
                     type="submit"
-
                     className="w-full rounded-full bg-primary hover:bg-primary-hover py-7 text-[10px] font-bold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    <>
-                        KIRIM PESANAN
-                        <Send className="ml-2 h-4 w-4" />
-                      </>
+                    <Send className="mr-2 h-4 w-4" />
+                    KIRIM PESANAN
                   </Button>
                 </form>
               </CardContent>
