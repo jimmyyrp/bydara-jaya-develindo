@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* === PRIMARY — Sage Forest === */
+    --primary: 153 35% 26%;
+    --primary-hover: 153 35% 21%;
+    --primary-active: 153 35% 17%;
+    --primary-foreground: 42 30% 99%;
+    --primary-muted: 153 25% 92%;
+
+    /* === BACKGROUND — Earthy White === */
+    --background: 42 30% 99%;
+    --background-alt: 0 0% 100%;
+
+    /* === ACCENT — Sand Beige === */
+    --accent: 42 30% 94%;
+    --accent-foreground: 222 47% 11%;
+    --accent-hover: 42 28% 90%;
+
+    /* === FOREGROUND — Deep Navy === */
+    --foreground: 222 47% 11%;
+    --foreground-muted: 222 20% 40%;
+    --foreground-subtle: 222 15% 60%;
+
+    /* === SHADCN COMPAT (kept for component passthrough) === */
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --secondary: 42 30% 94%;
+    --secondary-foreground: 153 35% 26%;
+    --muted: 42 30% 96%;
+    --muted-foreground: 222 20% 45%;
+    --input: 42 15% 88%;
+    --ring: 153 35% 26%;
+
+    /* === SEMANTIC / STATUS === */
+    --success: 142 45% 32%;
+    --success-bg: 142 40% 94%;
+    --warning: 38 85% 45%;
+    --warning-bg: 38 80% 94%;
+    --destructive: 4 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --destructive-bg: 4 70% 95%;
+    --info: 205 60% 45%;
+
+    /* === BORDER & DIVIDER === */
+    --border: 42 15% 88%;
+    --border-strong: 42 15% 78%;
+
+    /* === OVERLAY & ELEVATION === */
+    --overlay: 222 47% 11% / 0.55;
+    --shadow-color: 153 25% 15%;
+
+    /* === RADIUS === */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-full: 999px;
+
+    /* === SHADOWS === */
+    --shadow-sm: 0 1px 2px hsl(var(--shadow-color) / 0.06);
+    --shadow-md: 0 4px 12px hsl(var(--shadow-color) / 0.10);
+    --shadow-lg: 0 12px 32px hsl(var(--shadow-color) / 0.14);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/20;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  h1, h2, h3 {
+    @apply font-serif tracking-tight leading-tight;
+  }
+
+  /* Focus visible ring for accessibility */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary;
+  }
+
+  /* Prefers reduced motion — disable non-essential animations */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .container-custom {
+    @apply max-w-[1280px] mx-auto px-4 md:px-8;
+  }
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+}
