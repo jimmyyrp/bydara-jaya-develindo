@@ -53,6 +53,40 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  name: siteConfig.name,
+  description: `${siteConfig.project} di Nan Balimo, Kota Solok. Hunian asri, aman, dan bebas banjir dengan legalitas SHM.`,
+  url: "https://bydarajaya.com",
+  telephone: siteConfig.phone,
+  email: siteConfig.email,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: siteConfig.address,
+    addressLocality: "Kota Solok",
+    addressRegion: "Sumatera Barat",
+    postalCode: "27326",
+    addressCountry: "ID",
+  },
+  founder: {
+    "@type": "Person",
+    name: siteConfig.developer,
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: -0.7938,
+    longitude: 100.6402,
+  },
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    opens: "08:00",
+    closes: "17:00",
+  },
+  priceRange: siteConfig.priceStart,
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -60,6 +94,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id" className="scroll-smooth">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${plusJakarta.variable} ${playfair.variable} font-sans bg-background text-foreground antialiased`}
       >

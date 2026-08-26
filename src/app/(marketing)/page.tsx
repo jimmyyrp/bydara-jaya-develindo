@@ -1,12 +1,49 @@
 import { type Metadata } from "next";
+import dynamic from "next/dynamic";
 import { Hero } from "@/components/sections/hero";
 import { TrustBar } from "@/components/sections/trust-bar";
-import { Features } from "@/components/sections/features";
-import { UnitCatalog } from "@/components/sections/unit-catalog";
-import { CTASection } from "@/components/sections/cta-section";
-import { Location } from "@/components/sections/location";
-import { WebDevCTA } from "@/components/sections/web-dev-cta";
 import { siteConfig } from "@/lib/data";
+
+// Lazy load below-fold sections to improve LCP and initial bundle
+const Features = dynamic(
+  () =>
+    import("@/components/sections/features").then((mod) => ({
+      default: mod.Features,
+    })),
+  { ssr: true }
+);
+
+const UnitCatalog = dynamic(
+  () =>
+    import("@/components/sections/unit-catalog").then((mod) => ({
+      default: mod.UnitCatalog,
+    })),
+  { ssr: true }
+);
+
+const CTASection = dynamic(
+  () =>
+    import("@/components/sections/cta-section").then((mod) => ({
+      default: mod.CTASection,
+    })),
+  { ssr: true }
+);
+
+const WebDevCTA = dynamic(
+  () =>
+    import("@/components/sections/web-dev-cta").then((mod) => ({
+      default: mod.WebDevCTA,
+    })),
+  { ssr: true }
+);
+
+const Location = dynamic(
+  () =>
+    import("@/components/sections/location").then((mod) => ({
+      default: mod.Location,
+    })),
+  { ssr: true }
+);
 
 export const metadata: Metadata = {
   title: `Beranda | ${siteConfig.name}`,
