@@ -1,6 +1,5 @@
 import { type Metadata } from "next";
 import { siteConfig } from "@/lib/data";
-import { Breadcrumb } from "@/components/breadcrumb";
 import { SimulasiKPRClient } from "@/components/simulasi-kpr-client";
 
 export const metadata: Metadata = {
@@ -13,12 +12,5 @@ export const metadata: Metadata = {
 };
 
 export default function SimulasiKPRPage() {
-  return (
-    <>
-      <div className="container-custom">
-        <Breadcrumb items={[{ label: "Simulasi KPR" }]} />
-      </div>
-      <SimulasiKPRClient />
-    </>
-  );
+  return <SimulasiKPRClient />;
 }

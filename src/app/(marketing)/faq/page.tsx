@@ -1,6 +1,5 @@
 import { type Metadata } from "next";
 import { siteConfig } from "@/lib/data";
-import { Breadcrumb } from "@/components/breadcrumb";
 import { FAQClient } from "@/components/faq-client";
 
 export const metadata: Metadata = {
@@ -13,12 +12,5 @@ export const metadata: Metadata = {
 };
 
 export default function FAQPage() {
-  return (
-    <>
-      <div className="container-custom">
-        <Breadcrumb items={[{ label: "FAQ" }]} />
-      </div>
-      <FAQClient />
-    </>
-  );
+  return <FAQClient />;
 }

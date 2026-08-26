@@ -9,7 +9,6 @@ import {
 } from "lucide-react";
 import { siteConfig, facilities } from "@/lib/data";
 import { Badge } from "@/components/ui/badge";
-import { Breadcrumb } from "@/components/breadcrumb";
 
 export const metadata: Metadata = {
   title: "Fasilitas",
@@ -31,7 +30,6 @@ export default function FasilitasPage() {
       {/* Hero */}
       <section className="py-12 md:py-16 bg-background-alt">
         <div className="container-custom">
-          <Breadcrumb items={[{ label: "Griya Taman Belibis", href: "/proyek/griya-taman-belibis" }, { label: "Fasilitas" }]} />
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <Badge className="bg-primary-muted text-primary border-none px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest">
               Fasilitas

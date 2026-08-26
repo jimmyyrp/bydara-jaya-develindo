@@ -9,7 +9,7 @@ import { siteConfig } from "@/lib/data";
 export function Hero() {
   return (
     <section className="relative min-h-[85vh] flex items-center overflow-hidden">
-      {/* Background Image — full overlay */}
+      {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/hero.webp"
@@ -19,10 +19,10 @@ export function Hero() {
           priority
           sizes="100vw"
         />
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/50 to-foreground/20" />
+        {/* Strong left-to-right gradient for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-transparent" />
         {/* Bottom gradient fade */}
-        <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
       </div>
 
       <div className="container-custom relative z-10 py-16 md:py-24">
@@ -37,13 +37,13 @@ export function Hero() {
               Property Development Solok
             </span>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-[1.1] text-white tracking-tight text-balance">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-[1.1] text-white tracking-tight text-balance drop-shadow-lg">
               Hunian{" "}
               <span className="text-white/80 italic font-light">Eksklusif</span>{" "}
               di Nan Balimo
             </h1>
 
-            <p className="text-sm md:text-base text-white/80 leading-relaxed max-w-md">
+            <p className="text-sm md:text-base text-white/90 leading-relaxed max-w-md drop-shadow-md">
               Wujudkan impian keluarga Anda bersama{" "}
               <span className="text-white font-bold">{siteConfig.developer}</span>{" "}
               di kawasan perumahan yang asri dan bebas banjir.
