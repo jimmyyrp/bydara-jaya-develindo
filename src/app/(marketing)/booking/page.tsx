@@ -1,5 +1,6 @@
 import { type Metadata } from "next";
 import { siteConfig } from "@/lib/data";
+import { Breadcrumb } from "@/components/breadcrumb";
 import { BookingClient } from "@/components/booking-client";
 
 export const metadata: Metadata = {
@@ -12,5 +13,12 @@ export const metadata: Metadata = {
 };
 
 export default function BookingPage() {
-  return <BookingClient />;
+  return (
+    <>
+      <div className="container-custom">
+        <Breadcrumb items={[{ label: "Booking" }]} />
+      </div>
+      <BookingClient />
+    </>
+  );
 }
