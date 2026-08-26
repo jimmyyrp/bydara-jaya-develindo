@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Diskusi & Pertanyaan
+    url: https://github.com/bydarajaya/bydara-jaya-develindo/discussions
+    about: Ajukan pertanyaan atau diskusi umum
+  - name: 🔒 Security Issue
+    url: mailto:bydarajaya@gmail.com
+    about: Laporkan vulnerability secara private

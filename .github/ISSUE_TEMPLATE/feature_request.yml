@@ -1,0 +1,101 @@
+name: Feature Request
+description: Ajukan fitur baru atau peningkatan
+title: "[FITUR] "
+labels: ["enhancement", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚀 Feature Request
+
+        Punya ide untuk fitur baru? Kami ingin mendengar!
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Deskripsi Fitur
+      description: Jelaskan fitur yang Anda inginkan
+      placeholder: |
+        Saya ingin fitur yang memungkinkan pengguna untuk ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: usecase
+    attributes:
+      label: Use Case
+      description: Kapan atau mengapa fitur ini dibutuhkan?
+      placeholder: |
+        Ketika pengguna membuka halaman ..., mereka perlu ...
+        Saat ini mereka harus ... yang kurang efisien.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solusi yang Diusulkan
+      description: Jika ada ide solusi, jelaskan di sini
+      placeholder: |
+        Fitur ini bisa diimplementasikan dengan ...
+        UI-nya bisa berupa ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatif
+      description: Alternatif lain yang sudah dipertimbangkan
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioritas
+      description: Seberapa penting fitur ini menurut Anda?
+      options:
+        - Low - Nice to have
+        - Medium - Akan meningkatkan UX
+        - High - Penting untuk fungsionalitas
+    validations:
+      required: true
+
+  - type: dropdown
+    id: page
+    attributes:
+      label: Halaman Terkait
+      description: Halaman mana yang terpengaruh?
+      options:
+        - Beranda (/)
+        - Tentang Kami (/tentang-kami)
+        - Proyek (/proyek/griya-taman-belibis)
+        - Simulasi KPR (/simulasi-kpr)
+        - Booking (/booking)
+        - Kontak (/kontak)
+        - FAQ (/faq)
+        - Lainnya
+    validations:
+      required: true
+
+  - type: textarea
+    id: mockup
+    attributes:
+      label: Mockup/Design
+      description: Lampirkan mockup atau design jika ada
+      placeholder: Drag & drop gambar di sini
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Konfirmasi
+      description: Pastikan Anda sudah memeriksa hal berikut
+      options:
+        - label: Saya sudah memeriksa issues yang sudah ada
+          required: true
+        - label: Saya sudah memeriksa roadmap di README
+          required: false

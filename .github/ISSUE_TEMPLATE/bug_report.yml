@@ -1,0 +1,127 @@
+name: Bug Report
+description: Laporkan bug yang ditemukan di website
+title: "[BUG] "
+labels: ["bug", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🐛 Bug Report
+
+        Terima kasih sudah melaporkan bug! Mohon isi informasi di bawah agar kami bisa segera memperbaiki.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Deskripsi Bug
+      description: Jelaskan bug yang Anda temukan
+      placeholder: |
+        Saya menemukan bug di halaman ...
+        Ketika saya melakukan ..., terjadi ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Langkah-langkah Reproduksi
+      description: Jelaskan langkah-langkah untuk mereproduksi bug
+      placeholder: |
+        1. Buka halaman '...'
+        2. Klik tombol '...'
+        3. Scroll ke '...'
+        4. Lihat error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Perilaku yang Diharapkan
+      description: Jelaskan apa yang seharusnya terjadi
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Perilaku Aktual
+      description: Jelaskan apa yang sebenarnya terjadi
+    validations:
+      required: true
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: Perangkat
+      description: Perangkat apa yang Anda gunakan?
+      options:
+        - Desktop
+        - Mobile (Smartphone)
+        - Tablet
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: Browser apa yang Anda gunakan?
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Opera
+        - Lainnya
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      description: Sistem operasi yang digunakan
+      placeholder: "Contoh: Windows 11, macOS Sonoma, Android 14"
+    validations:
+      required: true
+
+  - type: input
+    id: screen
+    attributes:
+      label: Resolusi Layar
+      description: Resolusi layar perangkat
+      placeholder: "Contoh: 1920x1080, 375x812"
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Lampirkan screenshot jika memungkinkan
+      placeholder: Drag & drop screenshot di sini
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informasi Tambahan
+      description: Informasi lain yang mungkin membantu
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Konfirmasi
+      description: Pastikan Anda sudah memeriksa hal berikut
+      options:
+        - label: Saya sudah mencoba mereproduksi bug ini minimal 2 kali
+          required: true
+        - label: Saya sudah memeriksa halaman FAQ
+          required: false
+        - label: Saya sudah memeriksa issues yang sudah ada
+          required: true
